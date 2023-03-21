@@ -13,7 +13,8 @@
 body {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
-color: var(--main-color-text)
+color: var(--main-color-text);
+background-color: var(--white-color);
 }
 
 .list {list-style: none;}
@@ -30,16 +31,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
-.address-mail, .address-tel {
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;    
-letter-spacing: 0.02em;
-}
-
 .link-logo {
-font-family: 'Raleway';
+font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -55,7 +48,7 @@ flex-grow: 0;
 }
 
 .header-logo {
-font-family: 'Raleway';
+font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -81,10 +74,13 @@ order: 0;
 flex-grow: 0;
 }
 
-.address-mail, .address-tel {
+.address { font-style: normal; }
+
+.address-link {
+font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 1.5;
+line-height: 1.5;    
 letter-spacing: 0.02em;
 color: var(--main-color-text);
 }
@@ -111,14 +107,8 @@ gap: 10px;
 background: var(--actient-color-);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;  
-/* position: absolute;
-width: 169px;
-height: 56px;
-left: 636px;
-top: 428px; */
-}
 
-.btn-text {
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -131,6 +121,12 @@ order: 0;
 flex-grow: 0;
 cursor: pointer;
 }
+
+.hero-btn:hover, .hero-btn:focus {
+    background-color: var(--hover-color);
+    }
+
+
 
 /* ============  Вторая секция "section-dva" ============  */
 
@@ -196,6 +192,10 @@ text-transform: capitalize;
 color: var(--title-color);
 }
 
+.section-chetire-list {
+background-color: var(--white-color);
+}
+
 .section-chetire-img{
 width: 264px;
 height: 260px;
@@ -232,7 +232,7 @@ flex-grow: 0;
 /* ================== Подвал "footer" ================  */
 
 .footer-logo {
-font-family: 'Raleway';
+font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -295,7 +295,7 @@ color: var(--white-color);
 
 
 .Portfolio-title {
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -307,7 +307,7 @@ flex-grow: 0;
 }
 
 .Portfolio-text {
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
