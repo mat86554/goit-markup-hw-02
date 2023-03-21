@@ -20,7 +20,7 @@ background-color: var(--white-color);
 .list {list-style: none;}
 .link {text-decoration: none;}
 
-.hf:focus, .hf:hover { color:var(--hover-color); }
+.hovfoc:focus, .hovfoc:hover { color:var(--hover-color); }
 
 /* ================= header ====================== */
 
