@@ -1,211 +1,322 @@
+/* ============== Общее для всего ============= */
+
 :root {
-  --actient-color-: #4d5ae5;
-  --title-color: #2e2f42;
-  --main-color-text: #434455;
-  --white-color: #ffffff;
-  --hover-color: #404bbf;
-  --footer-color-logo: #f4f4fd;
-  --footer-color-text: #e7e9fc;
-  --background-color-section: #f4f4fd;
+--actient-color-: #4d5ae5;
+--title-color: #2e2f42;
+--main-color-text: #434455;
+--white-color: #ffffff;
+--hover-color: #404bbf;
+--footer-color-text: #e7e9fc;
+--background-color-section: #f4f4fd;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-color-text);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+color: var(--main-color-text)
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
-/* header */
 
-/* logo */
+.list {list-style: none;}
+.link {text-decoration: none;}
+
+.hf:focus, .hf:hover { color:var(--hover-color); }
+
+/* ================= header ====================== */
+
+.menu-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;    
+letter-spacing: 0.02em;
+}
+
+.address-mail, .address-tel {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;    
+letter-spacing: 0.02em;
+}
+
+.link-logo {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--actient-color-);
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
 .header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  color: var(--actient-color-);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--title-color);
+flex: none;
+order: 1;
+flex-grow: 0;
 }
-.header-logo.second-color-logo {
-  color: var(--title-color);
-}
-/* Navigation */
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--hover-color);
-}
-/* Contacts */
-.contacts {
-  font-style: normal;
-}
-.contacts-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color-text);
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--hover-color);
-}
-/* main */
-/* hero */
-.hero {
-  color: var(--white-color);
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.hero-bg {
-  background-color: var(--title-color);
-}
-.btn-main {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white-color);
-  background-color: var(--actient-color-);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  width: 169px;
-  height: 56px;
-}
-.btn-main:hover {
-  background-color: var(--hover-color);
-}
-/* features */
 
-.features-title {
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+.menu-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--title-color);
+flex: none;
+order: 0;
+flex-grow: 0;
 }
-.features-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+
+.address-mail, .address-tel {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-color-text);
 }
-/* what are we doing */
-.section-title {
-  color: var(--title-color);
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+
+/* ================ Секция hero ================ */
+
+.hero-title {
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--white-color) ;
 }
-/* Our Team */
-.section-our-team {
-  background-color: var(--background-color-section);
+
+.hero {background: var(--title-color);}
+
+.hero-btn {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 32px;
+gap: 10px;
+background: var(--actient-color-);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;  
+/* position: absolute;
+width: 169px;
+height: 56px;
+left: 636px;
+top: 428px; */
 }
-.card-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+
+.btn-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: var(--white-color);
+flex: none;
+order: 0;
+flex-grow: 0;
+cursor: pointer;
 }
-.card-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+
+/* ============  Вторая секция "section-dva" ============  */
+
+.section-dva-h-tri-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--title-color);
+flex: none;
+order: 0;
+flex-grow: 0;
 }
-/* footer */
+
+.section-dva-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-color-text);
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* ============  Третья секция "section-tri" ============  */
+
+.section-tri-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--title-color);
+}
+
+.section-tri-img {
+box-sizing: border-box;
+width: 360px;
+height: 300px;
+background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
+background-blend-mode: soft-light, normal;
+border: 1px solid var(--footer-color-text);
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+/* ========== Четвертая секция "section-chetire" =========  */
+
+
+.section-chetire {background: var(--background-color-section);}
+
+.section-chetire-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--title-color);
+}
+
+.section-chetire-img{
+width: 264px;
+height: 260px;
+mix-blend-mode: normal;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.section-dva-h-chetire-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--title-color);
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.section-chetire-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color:  var(--main-color-text);
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* ================== Подвал "footer" ================  */
+
 .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--actient-color-);
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-color-section);
+flex: none;
+order: 1;
+flex-grow: 0;
 }
-.footer-logo.footer-second-color-logo {
-  color: var(--footer-color-logo);
-}
+
+.footer { background: var(--title-color);}
+
 .footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--footer-color-text);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--footer-color-text);
 }
-.footer {
-  background-color: var(--title-color);
-}
-/* portfolio */
 
-/* filter */
-.btn {
-  background: var(--footer-color-logo);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--actient-color-);
-  font-family: 'Roboto', sans-serif;
-  cursor: pointer;
-}
-.btn:hover {
-  background: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-color: var(--hover-color);
-  color: var(--white-color);
-}
-/* My Projects */
 
-.card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
+/*================= PORTFOLIO ================ */
+
+.filters-btn {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--actient-color-);  
+background: var(--background-color-section);
+border: 1px solid var(--footer-color-text);
+border-radius: 4px;
+letter-spacing: 0.04em;
+color: var(--actient-color-);
+cursor: pointer;
+
+box-sizing: border-box; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex: none;
+order: 4;
+flex-grow: 0;
+padding: 12px 24px;
+
 }
-.portfolio-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color-text);
+
+.filters-btn:hover {
+background-color: var(--hover-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-color: var(--hover-color);
+color: var(--white-color);
 }
+
+
+.Portfolio-title {
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--title-color);
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.Portfolio-text {
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-color-text);
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+
