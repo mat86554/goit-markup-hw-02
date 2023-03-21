@@ -74,7 +74,7 @@ order: 0;
 flex-grow: 0;
 }
 
-.address { font-style: normal; }
+.header-adress { font-style: normal; }
 
 .address-link {
 font-style: normal;
@@ -286,15 +286,14 @@ padding: 12px 24px;
 
 }
 
-.filters-btn:hover {
+.filters-btn:hover, .filters-btn:focus{
 background-color: var(--hover-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-color: var(--hover-color);
 color: var(--white-color);
 }
 
-
-.Portfolio-title {
+.portfolio-title {
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 20px;
@@ -306,7 +305,7 @@ order: 0;
 flex-grow: 0;
 }
 
-.Portfolio-text {
+.portfolio-text {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 16px;
