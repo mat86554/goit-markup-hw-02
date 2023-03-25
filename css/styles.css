@@ -42,9 +42,6 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--actient-color-);
-flex: none;
-order: 0;
-flex-grow: 0;
 }
 
 .header-logo {
@@ -58,9 +55,6 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--title-color);
-flex: none;
-order: 1;
-flex-grow: 0;
 }
 
 .menu-link {
@@ -136,9 +130,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--title-color);
-flex: none;
-order: 0;
-flex-grow: 0;
+
 }
 
 .section-dva-text{
@@ -147,9 +139,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--main-color-text);
-flex: none;
-order: 1;
-flex-grow: 0;
 }
 
 /* ============  Третья секция "section-tri" ============  */
@@ -212,9 +201,6 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--title-color);
-flex: none;
-order: 0;
-flex-grow: 0;
 }
 
 .section-chetire-text {
@@ -224,9 +210,7 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color:  var(--main-color-text);
-flex: none;
-order: 1;
-flex-grow: 0;
+
 }
 
 /* ================== Подвал "footer" ================  */
@@ -242,9 +226,7 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--background-color-section);
-flex: none;
-order: 1;
-flex-grow: 0;
+
 }
 
 .footer { background: var(--title-color);}
@@ -270,20 +252,8 @@ color: var(--actient-color-);
 background: var(--background-color-section);
 border: 1px solid var(--footer-color-text);
 border-radius: 4px;
-letter-spacing: 0.04em;
-color: var(--actient-color-);
 cursor: pointer;
-
-box-sizing: border-box; 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-flex: none;
-order: 4;
-flex-grow: 0;
 padding: 12px 24px;
-
 }
 
 .filters-btn:hover, .filters-btn:focus{
@@ -300,9 +270,6 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--title-color);
-flex: none;
-order: 0;
-flex-grow: 0;
 }
 
 .portfolio-text {
@@ -312,9 +279,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--main-color-text);
-flex: none;
-order: 1;
-flex-grow: 0;
 }
 
 
